@@ -1,5 +1,6 @@
 package org.example;
 
+import fibonacci.DynamicFibonacci;
 import fibonacci.IterativeFibonacci;
 import fibonacci.RecurciveFibonacci;
 
@@ -7,7 +8,7 @@ import fibonacci.RecurciveFibonacci;
  * Hello world!
  *
  */
-public class App 
+public class Main
 {
     public static void main( String[] args ){
         IterativeFibonacci iterativeFibonacci = new IterativeFibonacci();
@@ -17,6 +18,10 @@ public class App
 
         RecurciveFibonacci recurciveFibonacci = new RecurciveFibonacci();
         System.out.println("Recurcive fibonacci: ");
-        System.out.println(iterativeFibonacci.iterativeFibonacci(number));
+        System.out.println(recurciveFibonacci.recursiveFibonacci(number));
+
+        DynamicFibonacci dynamicFibonacci = new DynamicFibonacci();
+        System.out.println("Dynamic fibonacci: ");
+        System.out.println(dynamicFibonacci.dynamicFibonacci(number));
     }
 }

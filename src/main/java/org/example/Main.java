@@ -11,8 +11,10 @@ import fibonacci.RecurciveFibonacci;
 public class Main
 {
     public static void main( String[] args ){
+
+        int number = 6;
+
         IterativeFibonacci iterativeFibonacci = new IterativeFibonacci();
-        int number = 4;
         System.out.println("Iterative fibonacci: ");
         System.out.println(iterativeFibonacci.iterativeFibonacci(number));
 
